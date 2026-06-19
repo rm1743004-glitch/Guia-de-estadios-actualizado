@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <script src="js/registro.js"></script>
+</head>
+<body>
+    <nav>
+    <h2>Guia de Estadios FWC2026</h2>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="menu"><a href="sedes.html">Galeria de sedes</a>
+        <ul class="submenu">
+            <li><a href="sedeusa.html"></a></li>
+        </ul>
+        </li>
+        <li><a href="comparar.html">Comparador de estadios</a></li>
+        <li><a href="ciudades.html">Galeria de ciudades</a></li>
+        <li class="menu"><a href="">Acerca del equipo</a><ul class="submenu">
+        <li><a href="integrantes.html">Integrantes del grupo</a></li>
+        <li><a href="tecnologia.html">Tecnologías utilizadas</a></li>
+        <li><a href="acerca.html">Acerca del proyecto</a></li>
+    </ul>
+</li>
+        <li><a href="registro.html">Formulario de registro</a></li>
+    </ul>
+   </nav>
+   <div class="wrapper">
+    <header class="form-header">
+      <span class="badge">TORNEO 2026</span>
+      <h1>Formulario de Registro</h1>
+      <p class="subtitle">Completa tus datos para asegurar tu lugar</p>
+    </header>
+
+    <form id="registroForm" novalidate>
+
+      <!-- Nombre -->
+      <div class="field">
+        <label for="nombre">Nombre completo</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ej. María García"
+          autocomplete="name"
+        />
+        <span class="error" id="error-nombre"></span>
+      </div>
+
+      <!-- Correo -->
+      <div class="field">
+        <label for="correo">Correo electrónico</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="ejemplo@correo.com"
+          autocomplete="email"
+        />
+        <span class="error" id="error-correo"></span>
+      </div>
+
+      <!-- Ciudad sede -->
+      <div class="field">
+        <label for="ciudad">Ciudad sede de mayor interés</label>
+        <div class="select-wrapper">
+          <select id="ciudad" name="ciudad">
+            <option value="">— Selecciona una ciudad —</option>
+            <option value="ciudad-de-mexico">Ciudad de México</option>
+            <option value="guadalajara">Guadalajara</option>
+            <option value="monterrey">Monterrey</option>
+            <option value="puebla">Puebla</option>
+            <option value="tijuana">Tijuana</option>
+            <option value="leon">León</option>
+            <option value="juarez">Ciudad Juárez</option>
+            <option value="merida">Mérida</option>
+            <option value="san-luis-potosi">San Luis Potosí</option>
+            <option value="torreon">Torreón</option>
+            <option value="queretaro">Querétaro</option>
+            <option value="cancun">Cancún</option>
+            <option value="aguascalientes">Aguascalientes</option>
+            <option value="morelia">Morelia</option>
+            <option value="veracruz">Veracruz</option>
+            <option value="chihuahua">Chihuahua</option>
+          </select>
+        </div>
+        <span class="error" id="error-ciudad"></span>
+      </div>
+
+      <!-- ¿Viajaría? -->
+      <div class="field">
+        <label class="label-group">¿Viajarías al torneo?</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="viaje" value="si" />
+            <span class="radio-custom"></span>
+            Sí, viajaría
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="viaje" value="no" />
+            <span class="radio-custom"></span>
+            No, asistiría local
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="viaje" value="quizas" />
+            <span class="radio-custom"></span>
+            Quizás
+          </label>
+        </div>
+        <span class="error" id="error-viaje"></span>
+      </div>
+
+      <button type="submit" class="btn-submit">
+        Registrarme al torneo
+      </button>
+
+    </form>
+
+    <!-- Mensaje de éxito -->
+    <div class="success-msg" id="successMsg" hidden>
+      <div class="success-icon">✓</div>
+      <h2>¡Registro exitoso!</h2>
+      <p id="successDetail"></p>
+      <button class="btn-reset" id="btnReset">Registrar otra persona</button>
+    </div>
+  </div>
+   <footer>
+    <h2>FIFA WORLD CUP 2026</h2>
+
+    <div class="banderas">
+        <img src="img/Banderas/mexico.jpeg" alt="México">
+        <img src="img/Banderas/canada.jpeg" alt="Canadá">
+        <img src="img/Banderas/bandera-usa.jpg" alt="Estados Unidos">
+    </div>
+
+    <p>© 2026 FIFA World Cup. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/ciudades.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav>
+    <h2>Guia de Estadios FWC2026</h2>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="menu"><a href="sedes.html">Galeria de sedes</a>
+        <ul class="submenu">
+            <li><a href="sedeusa.html"></a></li>
+        </ul>
+        </li>
+        <li><a href="comparar.html">Comparador de estadios</a></li>
+        <li><a href="ciudades.html">Galeria de ciudades</a></li>
+        <li class="menu"><a href="">Acerca del equipo</a><ul class="submenu">
+        <li><a href="integrantes.html">Integrantes del grupo</a></li>
+        <li><a href="tecnologia.html">Tecnologías utilizadas</a></li>
+        <li><a href="acerca.html">Acerca del proyecto</a></li>
+    </ul>
+</li>
+        <li><a href="registro.html">Formulario de registro</a></li>
+    </ul>
+   </nav>
+   <script src="js/script.js"></script>
+   <svg style="display:none">
+  <symbol id="icon-photo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 7h3l1.6-2.2a1 1 0 0 1 .8-.4h5.2a1 1 0 0 1 .8.4L17 7h3a1.2 1.2 0 0 1 1.2 1.2v10.6A1.2 1.2 0 0 1 20 20H4a1.2 1.2 0 0 1-1.2-1.2V8.2A1.2 1.2 0 0 1 4 7z"/>
+    <circle cx="12" cy="13.2" r="3.6"/>
+  </symbol>
+</svg>
+
+<header class="hero-ticket">
+  <div class="hero-row">
+    <span>PASE DE ABORDAR · GUÍA DE SEDES</span>
+    <span>FWC26</span>
+  </div>
+  <h1 class="hero-title">Copa<br>Mundial 2026</h1>
+  <div class="hero-meta">
+    <div class="hero-field">
+      <span class="field-label">Países anfitriones</span>
+      <span class="field-value">México · Estados Unidos · Canadá</span>
+    </div>
+    <div class="hero-field">
+      <span class="field-label">Fechas</span>
+      <span class="field-value">11 jun – 19 jul 2026</span>
+    </div>
+    <div class="hero-field">
+      <span class="field-label">Ciudades sede</span>
+      <span class="field-value">16</span>
+    </div>
+  </div>
+  <p class="hero-sub">Guía de las 16 ciudades anfitrionas del torneo: población, idioma, moneda, zona horaria y dos atractivos imprescindibles de cada destino. Cada tarjeta incluye espacios marcados para insertar fotografías reales.</p>
+</header>
+
+<section class="gate-filters">
+  <button class="gate-btn active" data-filter="all">Todas las puertas</button>
+  <button class="gate-btn" data-filter="usa">Estados Unidos</button>
+  <button class="gate-btn" data-filter="mexico">México</button>
+  <button class="gate-btn" data-filter="canada">Canadá</button>
+</section>
+
+<main class="terminal">
+
+  <!-- ===================== ESTADOS UNIDOS ===================== -->
+  <section class="country-group" data-country="usa">
+    <div class="country-heading">
+      <span class="country-tag">EUA</span>
+      <h2>Estados Unidos</h2>
+      <span class="country-count">11 ciudades sede</span>
+    </div>
+    <div class="tickets-grid">
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">Mercedes-Benz Stadium</span>
+          </div>
+          <h3 class="city-name">Atlanta</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="World of Coca-Cola">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>World of Coca-Cola</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Centennial Olympic Park">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Centennial Olympic Park</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 01</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~6.3 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>ET — UTC−5 (verano UTC−4)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">Gillette Stadium</span>
+          </div>
+          <h3 class="city-name">Boston</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Freedom Trail">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Freedom Trail</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Fenway Park">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Fenway Park</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 02</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~4.9 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>ET — UTC−5 (verano UTC−4)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">AT&amp;T Stadium</span>
+          </div>
+          <h3 class="city-name">Dallas</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Reunion Tower">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Reunion Tower</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Dallas Arboretum and Botanical Garden">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Dallas Arboretum</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 03</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~7.6 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés (y español)</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>CT — UTC−6 (verano UTC−5)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">NRG Stadium</span>
+          </div>
+          <h3 class="city-name">Houston</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Space Center Houston">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Space Center Houston</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Buffalo Bayou Park">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Buffalo Bayou Park</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 04</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~7.3 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés (y español)</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>CT — UTC−6 (verano UTC−5)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">Arrowhead Stadium</span>
+          </div>
+          <h3 class="city-name">Kansas City</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="National World War I Museum and Memorial">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>National WWI Museum</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Country Club Plaza">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Country Club Plaza</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 05</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~2.2 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>CT — UTC−6 (verano UTC−5)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">SoFi Stadium</span>
+          </div>
+          <h3 class="city-name">Los Ángeles</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Hollywood Walk of Fame">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Hollywood Walk of Fame</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Santa Monica Pier">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Santa Monica Pier</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 06</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~13 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés (y español)</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>PT — UTC−8 (verano UTC−7)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">Hard Rock Stadium</span>
+          </div>
+          <h3 class="city-name">Miami</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="South Beach, Miami Beach">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>South Beach</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Little Havana">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Little Havana</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 07</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~6.1 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés (y español)</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>ET — UTC−5 (verano UTC−4)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">MetLife Stadium</span>
+          </div>
+          <h3 class="city-name">Nueva York / Nueva Jersey</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Statue of Liberty">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Estatua de la Libertad</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Central Park">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Central Park</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 08</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~19.5 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés (y español)</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>ET — UTC−5 (verano UTC−4)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">Lincoln Financial Field</span>
+          </div>
+          <h3 class="city-name">Filadelfia</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Liberty Bell">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Liberty Bell</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Independence Hall">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Independence Hall</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 09</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~6.2 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>ET — UTC−5 (verano UTC−4)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">Levi's Stadium</span>
+          </div>
+          <h3 class="city-name">Área de la Bahía (San Francisco)</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Golden Gate Bridge">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Golden Gate Bridge</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Alcatraz Island">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Isla de Alcatraz</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 10</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~7.7 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés (y español)</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>PT — UTC−8 (verano UTC−7)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="usa">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="usa">EUA</span>
+            <span class="venue">Lumen Field</span>
+          </div>
+          <h3 class="city-name">Seattle</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Space Needle">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Space Needle</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Pike Place Market">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Pike Place Market</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 11</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~4 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar estadounidense (USD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>PT — UTC−8 (verano UTC−7)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== MÉXICO ===================== -->
+  <section class="country-group" data-country="mexico">
+    <div class="country-heading">
+      <span class="country-tag">MEX</span>
+      <h2>México</h2>
+      <span class="country-count">3 ciudades sede</span>
+    </div>
+    <div class="tickets-grid">
+
+      <article class="ticket" data-country="mexico">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="mexico">MEX</span>
+            <span class="venue">Estadio Azteca</span>
+          </div>
+          <h3 class="city-name">Ciudad de México</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Mexico City Metropolitan Cathedral">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Zócalo y Catedral Metropolitana</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Teotihuacan">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Zona arqueológica de Teotihuacán</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 12</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~22 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Español</dd></div>
+            <div><dt>Moneda</dt><dd>Peso mexicano (MXN)</dd></div>
+            <div><dt>Zona horaria</dt><dd>Centro de México — UTC−6</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="mexico">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="mexico">MEX</span>
+            <span class="venue">Estadio Akron</span>
+          </div>
+          <h3 class="city-name">Guadalajara</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Guadalajara Cathedral">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Catedral de Guadalajara</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Hospicio Cabañas">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Hospicio Cabañas</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 13</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~5.3 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Español</dd></div>
+            <div><dt>Moneda</dt><dd>Peso mexicano (MXN)</dd></div>
+            <div><dt>Zona horaria</dt><dd>Centro de México — UTC−6</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="mexico">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="mexico">MEX</span>
+            <span class="venue">Estadio BBVA</span>
+          </div>
+          <h3 class="city-name">Monterrey</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Cerro de la Silla">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Cerro de la Silla</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Parque Fundidora">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Parque Fundidora</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 14</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~5.3 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Español</dd></div>
+            <div><dt>Moneda</dt><dd>Peso mexicano (MXN)</dd></div>
+            <div><dt>Zona horaria</dt><dd>Centro de México — UTC−6</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== CANADÁ ===================== -->
+  <section class="country-group" data-country="canada">
+    <div class="country-heading">
+      <span class="country-tag">CAN</span>
+      <h2>Canadá</h2>
+      <span class="country-count">2 ciudades sede</span>
+    </div>
+    <div class="tickets-grid">
+
+      <article class="ticket" data-country="canada">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="canada">CAN</span>
+            <span class="venue">BMO Field</span>
+          </div>
+          <h3 class="city-name">Toronto</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="CN Tower">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Torre CN</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Niagara Falls">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Cataratas del Niágara</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 15</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~6.4 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar canadiense (CAD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>ET — UTC−5 (verano UTC−4)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="ticket" data-country="canada">
+        <span class="notch notch-top"></span><span class="notch notch-bottom"></span>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="stamp" data-ink="canada">CAN</span>
+            <span class="venue">BC Place</span>
+          </div>
+          <h3 class="city-name">Vancouver</h3>
+          <div class="photo-row">
+            <figure class="photo-slot" data-wiki="Stanley Park">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Stanley Park</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+            <figure class="photo-slot" data-wiki="Granville Island">
+              <svg class="slot-icon"><use href="#icon-photo"/></svg>
+              <figcaption><strong>Granville Island</strong><span>Insertar imagen · 1200×800</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="ticket-stub">
+          <span class="gate">PUERTA 16</span>
+          <dl class="data-list">
+            <div><dt>Población</dt><dd>~2.6 millones (área metro)</dd></div>
+            <div><dt>Idioma</dt><dd>Inglés</dd></div>
+            <div><dt>Moneda</dt><dd>Dólar canadiense (CAD)</dd></div>
+            <div><dt>Zona horaria</dt><dd>PT — UTC−8 (verano UTC−7)</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <p><strong>Nota sobre las imágenes:</strong> los recuadros con borde punteado están reservados para fotografías reales de cada atractivo. Reemplázalos por una etiqueta <code>&lt;img src="..."&gt;</code> dentro de cada <code>.photo-slot</code>, manteniendo idealmente una proporción cercana a 3:2 (por ejemplo, 1200×800 px) para que se ajusten bien a la tarjeta.</p>
+  <p>Población, idiomas, monedas y zonas horarias son aproximados y de referencia general; las cifras de población corresponden al área metropolitana de cada ciudad.</p>
+</footer>
+<section class="footer-worldcup">
+    <img src="img/Logo Mundial/logomundial.png" alt="" class="img-fondo">
+    <h2>FIFA WORLD CUP 2026</h2>
+
+    <div class="flags">
+        <img src="img/Banderas/mexico.jpeg" alt="México">
+        <img src="img/Banderas/canada.jpeg" alt="Canadá">
+        <img src="img/Banderas/bandera-usa.jpg" alt="Estados Unidos">
+    </div>
+
+    <p>© 2026 FIFA World Cup. Todos los derechos reservados.</p>
+</section>
+</body>
+</html>

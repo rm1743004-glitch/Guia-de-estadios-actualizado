@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Estadios - FWC 2026</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+    <nav>
+    <h2>Guia de Estadios FWC2026</h2>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="menu"><a href="sedes.html">Galeria de sedes</a>
+        <ul class="submenu">
+            <li><a href="sedeusa.html"></a></li>
+        </ul>
+        </li>
+        <li><a href="comparar.html">Comparador de estadios</a></li>
+        <li><a href="ciudades.html">Galeria de ciudades</a></li>
+        <li class="menu"><a href="">Acerca del equipo</a><ul class="submenu">
+        <li><a href="integrantes.html">Integrantes del grupo</a></li>
+        <li><a href="tecnologia.html">Tecnologías utilizadas</a></li>
+        <li><a href="acerca.html">Acerca del proyecto</a></li>
+    </ul>
+</li>
+        <li><a href="registro.html">Formulario de registro</a></li>
+    </ul>
+   </nav>
+
+    <div class="comparador-header">
+        <h1>⚽ Comparador de Estadios</h1>
+        <p>Selecciona dos estadios para comparar sus características lado a lado</p>
+    </div>
+
+    <!-- SELECTORES -->
+    <div class="selectores-wrapper">
+        <div class="selector-box">
+            <label for="estadio1">Estadio 1</label>
+            <select id="estadio1">
+                <option value="">-- Selecciona un estadio --</option>
+            </select>
+        </div>
+        <div class="vs-badge">VS</div>
+        <div class="selector-box">
+            <label for="estadio2">Estadio 2</label>
+            <select id="estadio2">
+                <option value="">-- Selecciona un estadio --</option>
+            </select>
+        </div>
+    </div>
+
+    <button class="btn-comparar" onclick="compararEstadios()">🔍 Comparar</button>
+
+    <p class="mensaje-inicial" id="mensajeInicial">Selecciona dos estadios y presiona <strong>Comparar</strong> para ver la tabla comparativa.</p>
+
+    <!-- TABLA COMPARATIVA -->
+    <div class="tabla-comparativa-wrapper" id="tablaWrapper">
+        <table class="tabla-comparativa" id="tablaComparativa">
+            <thead>
+                <tr>
+                    <td class="header-estadio" id="header1">
+                        <img src="" alt="" id="foto1">
+                        <div class="nombre-estadio" id="nombreHeader1"></div>
+                    </td>
+                    <th class="col-etiqueta-header">DATOS</th>
+                    <td class="header-estadio" id="header2">
+                        <img src="" alt="" id="foto2">
+                        <div class="nombre-estadio" id="nombreHeader2"></div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+                <!-- Las filas se generan con JS -->
+            </tbody>
+        </table>
+    </div>
+    <footer class="footer-worldcup">
+    <h2>FIFA WORLD CUP 2026</h2>
+
+    <div class="flags">
+        <img src="img/Banderas/mexico.jpeg" alt="México">
+        <img src="img/Banderas/canada.jpeg" alt="Canadá">
+        <img src="img/Banderas/bandera-usa.jpg" alt="Estados Unidos">
+    </div>
+
+    <p>© 2026 FIFA World Cup. Todos los derechos reservados.</p>
+</footer>  
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedes y Estadios - FWC 2026</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+    <nav>
+    <h2>Guia de Estadios FWC2026</h2>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="menu"><a href="sedes.html">Galeria de sedes</a>
+        <ul class="submenu">
+            <li><a href="sedeusa.html"></a></li>
+        </ul>
+        </li>
+        <li><a href="comparar.html">Comparador de estadios</a></li>
+        <li><a href="ciudades.html">Galeria de ciudades</a></li>
+        <li class="menu"><a href="">Acerca del equipo</a><ul class="submenu">
+        <li><a href="integrantes.html">Integrantes del grupo</a></li>
+        <li><a href="tecnologia.html">Tecnologías utilizadas</a></li>
+        <li><a href="acerca.html">Acerca del proyecto</a></li>
+    </ul>
+</li>
+        <li><a href="registro.html">Formulario de registro</a></li>
+    </ul>
+   </nav>
+
+    <main style="padding: 20px; font-family: sans-serif; min-height: 80vh;">
+        
+        <h1 style="text-align: center; color: white; margin-top: 10px;">Galería de Sedes Oficiales</h1>
+        <p style="text-align: center; color: #f0f0f0;">Filtra de manera dinámica los estadios correspondientes al Mundial 2026.</p>
+
+        <div class="contenedor-filtros" style="text-align: center; margin: 30px 0;">
+            <button class="btn-filtro active" data-pais="todos" style="padding: 10px 20px; margin: 5px; cursor: pointer; font-weight: bold; border-radius: 5px; border: none;">Todos los Países</button>
+            <button class="btn-filtro" data-pais="mexico" style="padding: 10px 20px; margin: 5px; cursor: pointer; font-weight: bold; border-radius: 5px; border: none;">México</button>
+            <button class="btn-filtro" data-pais="canada" style="padding: 10px 20px; margin: 5px; cursor: pointer; font-weight: bold; border-radius: 5px; border: none;">Canadá</button>
+            <button class="btn-filtro" data-pais="usa" style="padding: 10px 20px; margin: 5px; cursor: pointer; font-weight: bold; border-radius: 5px; border: none;">Estados Unidos</button>
+        </div>
+
+        <div class="galeria-estadios">
+
+            <div class="subseccion-pais" data-pais="mexico" style="margin-bottom: 40px;">
+                <h2 style="color: #fff; border-bottom: 2px solid #fff; padding-bottom: 5px; margin-left: 20px;">Sedes en México</h2>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 15px;">
+                    
+                    <div class="tarjeta-estadio" onclick="abrirModal('azteca')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Azteca.webp" alt="Estadio Azteca" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Estadio Azteca</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Ciudad de México</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 83,264 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 1966</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('bbva')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/BBVA.jpg" alt="Estadio Monterrey" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Estadio Monterrey</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Guadalupe, N.L.</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 53,500 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2015</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('akron')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Akron.jfif" alt="Estadio Guadalajara" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Estadio Guadalajara</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Zapopan, Jal.</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 48,000 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2010</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="subseccion-pais" data-pais="canada" style="margin-bottom: 40px;">
+                <h2 style="color: #fff; border-bottom: 2px solid #fff; padding-bottom: 5px; margin-left: 20px;">Sedes en Canadá</h2>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 15px;">
+                    
+                    <div class="tarjeta-estadio" onclick="abrirModal('bmo-field')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/toronto.jfif" alt="BMO Field" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">BMO Field</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Toronto</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 30,000 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2007</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('bc-place')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Vancouver.jpg" alt="BC Place" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">BC Place</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Vancouver</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 54,500 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 1983</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="subseccion-pais" data-pais="usa" style="margin-bottom: 40px;">
+                <h2 style="color: #fff; border-bottom: 2px solid #fff; padding-bottom: 5px; margin-left: 20px;">Sedes en Estados Unidos</h2>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 15px;">
+                    
+                    <div class="tarjeta-estadio" onclick="abrirModal('sofi-stadium')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/SoFI.jpg" alt="SoFi Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">SoFi Stadium</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Los Ángeles</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 70,240 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2020</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('metlife')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Metlife.jpg" alt="MetLife Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">MetLife Stadium</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Nueva York / NJ</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 82,500 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2010</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('att-stadium')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/ATT.jpg" alt="AT&T Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">AT&T Stadium</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Dallas</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 80,000 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2009</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('mercedes-benz')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Atlanta.webp" alt="Mercedes-Benz Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Mercedes-Benz</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Atlanta</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 71,000 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2017</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('hard-rock')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Hard Rock.jpg" alt="Hard Rock Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Hard Rock Stadium</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Miami</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 65,300 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 1987</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('gillette-stadium')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Gillette.webp" alt="Gillette Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Gillette Stadium</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Boston</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 65,878 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2002</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('lincoln-financial')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Lincoln.jfif" alt="Lincoln Financial Field" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Lincoln Financial</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Filadelfia</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 67,594 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2003</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('lumen-field')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Lumen Field.jfif" alt="Lumen Field" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Lumen Field</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Seattle</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 69,000 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2002</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('levi-stadium')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/Levi's.jpg" alt="Levi's Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Levi's Stadium</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> San Francisco</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 68,500 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2014</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('nrg-stadium')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/NRG.jpg" alt="NRG Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">NRG Stadium</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Houston</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 72,220 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 2002</p>
+                    </div>
+
+                    <div class="tarjeta-estadio" onclick="abrirModal('arrowhead')" style="background: white; padding: 15px; border-radius: 10px; cursor: pointer; width: 260px; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="img/Estadios/kansas.jpg" alt="Arrowhead Stadium" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px;">
+                        <h3 style="margin: 10px 0 5px 0; font-size: 1.2em;">Arrowhead Stadium</h3>
+                        <p style="margin: 0; color: #555;"><b>Ciudad:</b> Kansas City</p>
+                        <p style="margin: 3px 0;"><b>Capacidad:</b> 76,416 aprox.</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #777;"><b>Año constr:</b> 1972</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="modal-detalle" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); justify-content: center; align-items: center; z-index: 99999; color: black; padding: 10px;">
+        <div style="background: white; padding: 25px; border-radius: 12px; max-width: 550px; width: 100%; position: relative; box-shadow: 0px 5px 25px rgba(0,0,0,0.5); box-sizing: border-box;">
+            
+            <button class="cerrar-modal" style="position: absolute; top: 12px; right: 12px; background: #e74c3c; color: white; border: none; padding: 6px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1.1em;">X</button>
+            
+            <h2 id="modal-titulo" style="margin-top: 0; color: #2c3e50; font-size: 1.6em;">Nombre Estadio</h2>
+            <hr style="border: 0; border-top: 1px solid #ddd; margin-bottom: 15px;">
+            
+            <p id="modal-descripcion" style="line-height: 1.5; color: #444; font-size: 0.95em; text-align: justify;">Descripción...</p>
+            <p style="font-size: 1.1em; margin: 15px 0;"><strong>Partidos asignados: </strong> <span id="modal-partidos" style="color: #27ae60; font-weight: bold; font-size: 1.2em;">0</span></p>
+            
+            <div id="modal-mapa" style="margin-top: 15px; background: #eee; border-radius: 6px; overflow: hidden; height: 220px;">
+                <iframe src="" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    
+     <footer class="footer-worldcup">
+    <h2>FIFA WORLD CUP 2026</h2>
+
+    <div class="flags">
+        <img src="img/Banderas/mexico.jpeg" alt="México">
+        <img src="img/Banderas/canada.jpeg" alt="Canadá">
+        <img src="img/Banderas/bandera-usa.jpg" alt="Estados Unidos">
+    </div>
+
+    <p>© 2026 FIFA World Cup. Todos los derechos reservados.</p>
+</footer>  
+
+</body>
+</html>
