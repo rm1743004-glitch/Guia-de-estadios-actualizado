@@ -136,7 +136,7 @@ iframe{
     border-radius: 8px;
 }
 .caja-grande{
-    width: 400px;
+    width: auto;
     padding: 15px;
     margin: 20px auto;
     background-color: #0c8129; 
