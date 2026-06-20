@@ -1,4 +1,4 @@
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@ nav{
     z-index: 1000;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
@@ -22,42 +22,21 @@ nav ul{
     padding: 0;
 }
 
-nav a{
+nav a {
     color: white;
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(247, 119, 119);
     border-radius: 10px;
 }
 
-
-@media (max-width:768px){
-
-    nav{
-        padding: 10px;
-    }
-
-    nav h2{
-        font-size: 18px;
-    }
-
-    nav ul{
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav a{
-        font-size: 14px;
-    }
-}
- .menu{
+.menu {
     position: relative;
 }
 
-.submenu{
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -69,21 +48,22 @@ nav a:hover{
     margin: 0;
 }
 
-.submenu li a{
+.submenu li a {
     display: block;
     padding: 10px;
     color: black;
     text-decoration: none;
 }
 
-.submenu li a:hover{
+.submenu li a:hover {
     background: #f0f0f0;
 }
 
-.menu:hover .submenu{
+.menu:hover .submenu {
     display: block;
 }
-:root{
+
+:root {
   --bg-navy:#5b9af3;
   --bg-navy-deep:#0B111F;
   --paper:#ECEEE2;
@@ -97,323 +77,384 @@ nav a:hover{
   --rule:rgba(27,35,51,0.22);
 }
 
-*{box-sizing:border-box;}
-html,body{margin:0;padding:0;}
-body{
-  background:var(--bg-navy);
-  color:var(--paper);
-  font-family:'Work Sans', sans-serif;
-  -webkit-font-smoothing:antialiased;
+* {
+  box-sizing: border-box;
 }
 
-a{color:inherit;}
-
-/* ---------- HERO ---------- */
-.hero-ticket{
-  max-width:1180px;
-  margin:0 auto;
-  padding:56px 28px 40px;
-  border-bottom:2px dashed rgba(236,238,226,0.18);
-}
-.hero-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.78rem;
-  letter-spacing:0.12em;
-  color:var(--gold);
-  margin-bottom:22px;
-}
-.hero-title{
-  font-family:'Big Shoulders Display', sans-serif;
-  font-weight:900;
-  font-size:clamp(3rem, 9vw, 6.2rem);
-  line-height:0.95;
-  letter-spacing:-0.01em;
-  margin:0 0 28px;
-  text-transform:uppercase;
-}
-.hero-meta{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(190px,1fr));
-  gap:18px 32px;
-  border-top:2px dashed rgba(236,238,226,0.18);
-  padding-top:22px;
-  margin-bottom:24px;
-}
-.hero-field{display:flex; flex-direction:column; gap:4px;}
-.field-label{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.7rem;
-  letter-spacing:0.1em;
-  text-transform:uppercase;
-  color:rgba(236,238,226,0.55);
-}
-.field-value{font-size:1.02rem; font-weight:600;}
-.hero-sub{
-  max-width:680px;
-  color:rgba(236,238,226,0.78);
-  font-size:1rem;
-  line-height:1.55;
-  margin:0;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-/* ---------- FILTROS ---------- */
-.gate-filters{
-  max-width:1180px;
-  margin:0 auto;
-  padding:22px 28px 6px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-.gate-btn{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.78rem;
-  letter-spacing:0.06em;
-  text-transform:uppercase;
-  background:transparent;
-  border:1.5px solid rgba(236,238,226,0.3);
-  color:rgba(236,238,226,0.85);
-  padding:9px 16px;
-  border-radius:999px;
-  cursor:pointer;
-  transition:background 0.15s, color 0.15s, border-color 0.15s;
-}
-.gate-btn:hover{border-color:var(--gold); color:var(--gold);}
-.gate-btn.active{
-  background:var(--gold);
-  border-color:var(--gold);
-  color:var(--bg-navy-deep);
+body {
+  background: var(--bg-navy);
+  color: var(--paper);
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ---------- CONTENEDOR PRINCIPAL ---------- */
-.terminal{max-width:1180px; margin:0 auto; padding:18px 28px 64px;}
-
-.country-group{margin-top:46px;}
-.country-heading{
-  display:flex;
-  align-items:baseline;
-  gap:14px;
-  margin-bottom:22px;
-  flex-wrap:wrap;
-}
-.country-tag{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.78rem;
-  font-weight:600;
-  letter-spacing:0.08em;
-  padding:4px 10px;
-  border-radius:4px;
-  color:#fff;
-}
-.country-group[data-country="usa"] .country-tag{background:var(--usa);}
-.country-group[data-country="mexico"] .country-tag{background:var(--mex);}
-.country-group[data-country="canada"] .country-tag{background:var(--can);}
-.country-heading h2{
-  font-family:'Big Shoulders Display', sans-serif;
-  font-weight:700;
-  text-transform:uppercase;
-  font-size:1.9rem;
-  margin:0;
-  letter-spacing:0.01em;
-}
-.country-count{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.8rem;
-  color:rgba(236,238,226,0.55);
+a {
+  color: inherit;
 }
 
-.tickets-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
-  gap:30px 26px;
+.hero-ticket {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 98px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 40px;
+  border-bottom: 2px dashed rgba(236,238,226,0.18);
 }
 
-/* ---------- TICKET (TARJETA DE CIUDAD) ---------- */
-.ticket{
-  position:relative;
-  display:flex;
-  background:var(--paper);
-  color:var(--ink);
-  border-radius:10px;
-  box-shadow:0 14px 30px rgba(0,0,0,0.28);
-  overflow:visible;
-}
-.notch{
-  position:absolute;
-  width:22px; height:22px;
-  border-radius:50%;
-  background:var(--bg-navy);
-  right:200px;
-  z-index:2;
-}
-.notch-top{top:-11px;}
-.notch-bottom{bottom:-11px;}
-
-.ticket-main{
-  flex:1 1 auto;
-  padding:24px 22px;
-  min-width:0;
-  border-radius:10px 0 0 10px;
-  overflow:hidden;
-}
-.ticket-topline{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom:10px;
-}
-.stamp{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.68rem;
-  font-weight:600;
-  letter-spacing:0.08em;
-  color:#fff;
-  padding:3px 8px;
-  border-radius:3px;
-  transform:rotate(-3deg);
-}
-.stamp[data-ink="usa"]{background:var(--usa);}
-.stamp[data-ink="mexico"]{background:var(--mex);}
-.stamp[data-ink="canada"]{background:var(--can);}
-.venue{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.74rem;
-  color:var(--ink-soft);
-}
-.city-name{
-  font-family:'Big Shoulders Display', sans-serif;
-  font-weight:900;
-  font-size:2.1rem;
-  line-height:1;
-  margin:2px 0 18px;
-  text-transform:uppercase;
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-bottom: 22px;
 }
 
-.photo-row{display:flex; gap:14px;}
-.photo-slot{
-  flex:1 1 50%;
-  margin:0;
-  border:2px dashed rgba(27,35,51,0.32);
-  border-radius:8px;
-  padding:16px 10px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  gap:8px;
-  min-height:128px;
-  justify-content:center;
-  background:rgba(27,35,51,0.03);
-}
-.slot-icon{width:26px; height:26px; color:var(--ink-soft); flex-shrink:0;}
-.photo-slot figcaption strong{
-  display:block;
-  font-size:0.84rem;
-  font-weight:600;
-  margin-bottom:3px;
-}
-.photo-slot figcaption span{
-  display:block;
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.66rem;
-  color:var(--ink-soft);
-  letter-spacing:0.02em;
+.hero-title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 9vw, 6.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  text-transform: uppercase;
 }
 
-.ticket-stub{
-  flex:0 0 200px;
-  position:relative;
-  border-left:2px dashed var(--rule);
-  padding:24px 18px 20px 20px;
-  display:flex;
-  flex-direction:column;
-  background:var(--paper-soft);
-  border-radius:0 10px 10px 0;
-}
-.gate{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.72rem;
-  font-weight:600;
-  letter-spacing:0.08em;
-  color:var(--gold);
-  background:var(--bg-navy);
-  align-self:flex-start;
-  padding:4px 9px;
-  border-radius:3px;
-  margin-bottom:16px;
-}
-.data-list{margin:0; flex:1;}
-.data-list > div{margin-bottom:13px;}
-.data-list dt{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:0.64rem;
-  text-transform:uppercase;
-  letter-spacing:0.08em;
-  color:var(--ink-soft);
-  margin-bottom:2px;
-}
-.data-list dd{
-  margin:0;
-  font-size:0.84rem;
-  font-weight:600;
-  line-height:1.3;
-}
-.barcode{
-  height:30px;
-  margin-top:8px;
-  background:repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 5px, var(--ink) 5px 6px, transparent 6px 11px, var(--ink) 11px 14px, transparent 14px 16px);
-  opacity:0.55;
+.hero-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px 32px;
+  border-top: 2px dashed rgba(236,238,226,0.18);
+  padding-top: 22px;
+  margin-bottom: 24px;
 }
 
-
-@media (max-width:680px){
-  .ticket{flex-direction:column;}
-  .ticket-main{border-radius:10px 10px 0 0;}
-  .ticket-stub{
-    flex-basis:auto;
-    border-left:none;
-    border-top:2px dashed var(--rule);
-    border-radius:0 0 10px 10px;
-    padding:18px 20px 22px;
-  }
-  .notch{display:none;}
-  .photo-row{flex-direction:column;}
-  .hero-row{flex-direction:column; align-items:flex-start; gap:6px;}
+.hero-field {
+  display: flex; 
+  flex-direction: column; 
+  gap: 4px;
 }
 
-/* ---------- ESTADO DE CARGA DE IMÁGENES ---------- */
-.photo-slot[data-wiki]{
-  background:linear-gradient(90deg,
+.field-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(236,238,226,0.55);
+}
+
+.field-value {
+  font-size: 1.02rem; 
+  font-weight: 600;
+}
+
+.hero-sub {
+  max-width: 680px;
+  color: rgba(236,238,226,0.78);
+  font-size: 1rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.gate-filters {
+  position: sticky;           
+  top: 80px;                  
+  z-index: 999;               
+  background: var(--bg-navy); 
+  
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px 28px 16px;    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gate-btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1.5px solid rgba(236,238,226,0.3);
+  color: rgba(236,238,226,0.85);
+  padding: 9px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.gate-btn:hover {
+  border-color: var(--gold); 
+  color: var(--gold);
+}
+
+.gate-btn.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--bg-navy-deep);
+}
+
+.terminal {
+  max-width: 1180px; 
+  margin: 0 auto; 
+  padding: 18px 28px 64px;
+}
+
+.country-group {
+  margin-top: 46px;
+}
+
+.country-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.country-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.country-group[data-country="usa"] .country-tag { background: var(--usa); }
+.country-group[data-country="mexico"] .country-tag { background: var(--mex); }
+.country-group[data-country="canada"] .country-tag { background: var(--can); }
+
+.country-heading h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.country-count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: rgba(236,238,226,0.55);
+}
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px 26px;
+}
+
+.ticket {
+  position: relative;
+  display: flex;
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 10px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.28);
+  overflow: visible;
+}
+
+.notch {
+  position: absolute;
+  width: 22px; 
+  height: 22px;
+  border-radius: 50%;
+  background: var(--bg-navy);
+  right: 200px;
+  z-index: 2;
+}
+
+.notch-top { top: -11px; }
+.notch-bottom { bottom: -11px; }
+
+.ticket-main {
+  flex: 1 1 auto;
+  padding: 24px 22px;
+  min-width: 0;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+}
+
+.ticket-topline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.stamp {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  transform: rotate(-3deg);
+}
+
+.stamp[data-ink="usa"] { background: var(--usa); }
+.stamp[data-ink="mexico"] { background: var(--mex); }
+.stamp[data-ink="canada"] { background: var(--can); }
+
+.venue {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+
+.city-name {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  font-size: 2.1rem;
+  line-height: 1;
+  margin: 2px 0 18px;
+  text-transform: uppercase;
+}
+
+.photo-row { 
+  display: flex; 
+  gap: 14px; 
+}
+
+.photo-slot {
+  flex: 1 1 50%;
+  margin: 0;
+  border: 2px dashed rgba(27,35,51,0.32);
+  border-radius: 8px;
+  padding: 16px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  min-height: 128px;
+  justify-content: center;
+  background: rgba(27,35,51,0.03);
+}
+
+.slot-icon { 
+  width: 26px; 
+  height: 26px; 
+  color: var(--ink-soft); 
+  flex-shrink: 0; 
+}
+
+.photo-slot figcaption strong {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.photo-slot figcaption span {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.66rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.ticket-stub {
+  flex: 0 0 200px;
+  position: relative;
+  border-left: 2px dashed var(--rule);
+  padding: 24px 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper-soft);
+  border-radius: 0 10px 10px 0;
+}
+
+.gate {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  background: var(--bg-navy);
+  align-self: flex-start;
+  padding: 4px 9px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.data-list { 
+  margin: 0; 
+  flex: 1; 
+}
+
+.data-list > div { 
+  margin-bottom: 13px; 
+}
+
+.data-list dt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-bottom: 2px;
+}
+
+.data-list dd {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.barcode {
+  height: 30px;
+  margin-top: 8px;
+  background: repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 5px, var(--ink) 5px 6px, transparent 6px 11px, var(--ink) 11px 14px, transparent 14px 16px);
+  opacity: 0.55;
+}
+
+.photo-slot[data-wiki] {
+  background: linear-gradient(90deg,
     rgba(27,35,51,0.07) 25%,
     rgba(27,35,51,0.13) 50%,
     rgba(27,35,51,0.07) 75%);
-  background-size:200% 100%;
-  animation:shimmer 1.4s infinite;
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
 }
-@keyframes shimmer{
-  0%{background-position:200% 0}
-  100%{background-position:-200% 0}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0 }
+  100% { background-position: -200% 0 }
 }
-.photo-slot img{display:block;}
 
+.photo-slot img { 
+  display: block; 
+}
 
-.footer-worldcup{
+.footer-worldcup {
     background: #0c8129;
     padding: 30px 20px;
     text-align: center;
     color: white;
 }
 
-.footer-worldcup h2{
+.footer-worldcup h2 {
     font-size: 2rem;
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
 
-.flags{
+.flags {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -422,31 +463,70 @@ a{color:inherit;}
     gap: 20px;
 }
 
-.flags img{
+.flags img {
     width: 220px;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.footer-worldcup p{
+.footer-worldcup p {
     margin-top: 25px;
     font-size: 0.9rem;
 }
 
-/* Responsive para celulares */
-@media (max-width: 768px){
-    .flags{
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav h2 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .gate-filters {
+        top: 44px;
+        padding: 15px 20px;
+    }
+
+    .flags {
         justify-content: center;
         gap: 15px;
     }
 
-    .flags img{
+    .flags img {
         width: 80px;
         height: 55px;
     }
 
-    .footer-worldcup h2{
+    .footer-worldcup h2 {
         font-size: 1.3rem;
     }
+}
+
+@media (max-width: 680px) {
+  .ticket { flex-direction: column; }
+  .ticket-main { border-radius: 10px 10px 0 0; }
+  
+  .ticket-stub {
+    flex-basis: auto;
+    border-left: none;
+    border-top: 2px dashed var(--rule);
+    border-radius: 0 0 10px 10px;
+    padding: 18px 20px 22px;
+  }
+  
+  .notch { display: none; }
+  .photo-row { flex-direction: column; }
+  .hero-row { flex-direction: column; align-items: flex-start; gap: 6px; }
 }
