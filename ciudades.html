@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galería de Ciudades - FWC 2026</title>
     <link rel="stylesheet" href="CSS/ciudades.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     
-   <nav>
+   <!-- El menú rojo se queda pegado en el borde superior absoluto (top: 0) -->
+   <nav style="position: sticky; top: 0; z-index: 10000;">
     <h2>Guia de Estadios FWC2026</h2>
     <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -27,6 +27,7 @@
         <li><a href="registro.html">Formulario de registro</a></li>
     </ul>
    </nav>
+
    <script src="js/script.js"></script>
    <svg style="display:none">
   <symbol id="icon-photo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -35,7 +36,7 @@
   </symbol>
 </svg>
 
-<header class="hero-ticket">
+<header class="hero-ticket" style="margin-top: 30px;">
   <div class="hero-row">
     <span>PASE DE ABORDAR · GUÍA DE SEDES</span>
     <span>FWC26</span>
@@ -55,10 +56,11 @@
       <span class="field-value">16</span>
     </div>
   </div>
-  <p class="hero-sub">Guía de las 16 ciudades anfitrionas del torneo: población, idioma, moneda, zona horaria y dos atractivos imprescindibles de cada destino. Cada tarjeta incluye espacios marcados para insertar fotografías reales.</p>
+  <p class="hero-sub">Guía de las 16 ciudades anfitrionas del torneo: población, idioma, moneda, zona horaria y dos atractivos indispensables de cada destino. Cada tarjeta incluye espacios marcados para insertar fotografías reales.</p>
 </header>
 
-<section class="gate-filters">
+<!-- Se vuelve sticky la barra de filtros de image_e8d686.png para seguir al menú. El top: 55px es para que quede justo debajo de la barra roja sin encimarse -->
+<section class="gate-filters" style="position: sticky; top: 55px; z-index: 9999; background-color: #5b92e5; padding: 10px 0;">
   <button class="gate-btn active" data-filter="all">Todas las puertas</button>
   <button class="gate-btn" data-filter="usa">Estados Unidos</button>
   <button class="gate-btn" data-filter="mexico">México</button>
@@ -601,22 +603,17 @@
 
 </main>
 
+<footer class="footer-worldcup">
+        <h2>FIFA WORLD CUP 2026</h2>
 
-<footer>
-  <p><strong>Nota sobre las imágenes:</strong> los recuadros con borde punteado están reservados para fotografías reales de cada atractivo. Reemplázalos por una etiqueta <code>&lt;img src="..."&gt;</code> dentro de cada <code>.photo-slot</code>, manteniendo idealmente una proporción cercana a 3:2 (por ejemplo, 1200×800 px) para que se ajusten bien a la tarjeta.</p>
-  <p>Población, idiomas, monedas y zonas horarias son aproximados y de referencia general; las cifras de población corresponden al área metropolitana de cada ciudad.</p>
-</footer>
-<section class="footer-worldcup">
-    <img src="img/Logo Mundial/logomundial.png" alt="" class="img-fondo">
-    <h2>FIFA WORLD CUP 2026</h2>
+        <div class="flags">
+            <img src="img/Banderas/mexico.jpeg" alt="México">
+            <img src="img/Banderas/canada.jpeg" alt="Canadá">
+            <img src="img/Banderas/bandera-usa.jpg" alt="Estados Unidos">
+        </div>
 
-    <div class="flags">
-        <img src="img/Banderas/mexico.jpeg" alt="México">
-        <img src="img/Banderas/canada.jpeg" alt="Canadá">
-        <img src="img/Banderas/bandera-usa.jpg" alt="Estados Unidos">
-    </div>
+        <p>© 2026 FIFA World Cup. Todos los derechos reservados.</p>
+    </footer>  
 
-    <p>© 2026 FIFA World Cup. Todos los derechos reservados.</p>
-</section>
 </body>
 </html>

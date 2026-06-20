@@ -364,16 +364,6 @@ a{color:inherit;}
   opacity:0.55;
 }
 
-footer{
-  max-width:1180px;
-  margin:0 auto;
-  padding:30px 28px 60px;
-  border-top:2px dashed rgba(236,238,226,0.18);
-  color:rgba(236,238,226,0.6);
-  font-size:0.85rem;
-  line-height:1.6;
-}
-footer strong{color:rgba(236,238,226,0.85);}
 
 @media (max-width:680px){
   .ticket{flex-direction:column;}
@@ -455,14 +445,4 @@ footer strong{color:rgba(236,238,226,0.85);}
     .footer-worldcup h2{
         font-size: 1.3rem;
     }
-}
-.img-fondo{
-    position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    opacity: 0.15;
-    z-index: 1;
 }
