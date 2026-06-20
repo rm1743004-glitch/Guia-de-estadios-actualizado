@@ -64,6 +64,10 @@ nav a:hover{
         font-size: 14px;
     }
 }
+ .menu{
+    position: relative;
+}
+
 .submenu{
     display: none;
     position: absolute;

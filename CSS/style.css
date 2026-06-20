@@ -6,6 +6,7 @@
    } 
 .hero{
     text-align:center;
+    margin-top: auto;
     padding:80px 20px;
     color: white;
 }
@@ -67,17 +68,6 @@ nav a:hover{
     border-radius: 10px;
 }
 
-.submenu{
-    display: none;
-    position: absolute;
-    list-style: none;
-    background: rgb(227, 22, 22);
-    padding: 0;
-}
-
-.menu:hover .submenu{
-    display: block;
-}
 
 @media (max-width:768px){
 
@@ -100,16 +90,6 @@ nav a:hover{
     }
 }
 
-    .submenu{
-        display: none;
-        position: absolute;
-        list-style: none;
-        background: rgb(227, 22, 22);
-        padding: 0;
-    }
-    .menu:hover  .submenu{
-        display: block;
-    }
     .paises{
     display: flex;
     justify-content: center;
